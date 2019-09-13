@@ -1,0 +1,16 @@
+note over selain:
+kun käyttäjä lähettää uuden muistiinpanon, selaimessa oleva JavaScript 
+1. luo uuden muistiinpanon
+2. lisää sen muistiinpanojen listalle
+3. piirtää listan uusista muistiinpanoista selaimeen ja 
+4a. lähettää uuden muistiinpanon palvelimelle
+end note
+
+selain->palvelin: 4b. HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note right of selain
+(new_note_spa sisältää JSON-muotoisen uuden muistiinpanon, 
+johon kuuluu sekä "content" että "date".)
+end note
+
+palvelin-->selain: status-koodi: 201 created.
